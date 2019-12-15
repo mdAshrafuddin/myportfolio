@@ -1,5 +1,6 @@
 /*Medium Devices (Desktops & Laptops)*/
 @media (min-width: 768px) and (max-width: 991px) {
+
     .navbar-toggler {
         background-color: #f3f7ec;
         border-radius: 0;
@@ -12,6 +13,8 @@
         width: 116px;
         margin-top: -40px;
     }
+    
+
     .about-right h1 {
         font-size: 24px;
     }
@@ -100,7 +103,8 @@
         left: 60%;
     }
     .nav-pills .nav-link {
-        margin-left: 0px;
+        margin-left: 6px;
+        margin-bottom: 10px;
     }
     #service .line_double::before, #service .line_double::after {
         left: 21%;
@@ -117,7 +121,32 @@
 }
 /*Extra small Devices (Desktops & Laptops)*/
 @media (max-width: 575px) {
-    
+    .white-nav-top .navbar-toggler {
+        margin-left: 16px;
+    }
+    .white-nav-top .navbar-collapse {
+        margin-top: -39px;
+    }
+    .white-nav-top .navbar-nav {
+        background-color: red;
+    }
+    .white-nav-top .navbar-nav {
+        background-color: rgba(0, 0, 0, .8);
+    }
+    .white-nav-top.navbar-light ul.navbar-nav li a.nav-link {
+        color: #fff;
+    }
+    div#home-heading h1 {
+        font-size: 20px;
+    }
+    div#home-heading h2 {
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    .home-img img {
+        margin-top: 100px;
+    }
     .navbar-toggler {
         background-color: #f3f7ec;
         border-radius: 0;
@@ -160,7 +189,7 @@
         margin-top: 39px;
     }
      .about-right h1 {
-        font-size: 24px;
+        font-size: 17px;
     }
     .about-short-contact-wrap ul li label {
         font-size: 14px;
@@ -187,5 +216,11 @@
     }
     #isotope-filters button {
         padding-right: 0px;
+    }
+}
+
+@media(max-width: 320px) {
+    .buttons_wrap ul li a {
+        padding: 12px 13px;
     }
 }

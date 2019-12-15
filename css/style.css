@@ -160,11 +160,12 @@ span.icon-chg {
 .navbar-light ul.navbar-nav li a.nav-link {
     color: #fff;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 700;
     margin: 0px 8px;
     letter-spacing: 1px;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
+    font-size: 16px;
 }
 .navbar-light ul.navbar-nav li a.nav-link.active {
     color: #04BB3C;
@@ -193,38 +194,44 @@ nav.navbar.navbar-expand-lg.navbar-light {
     border: 5px solid #e4d5d5;
     margin-top: 150px;
 }
-.navbar-nav .nav-link .icon {
-    border: 1px solid #fff;
-    width: 30px;
-    height: 30px;
-    padding: 6px;
-    border-radius: 4px;
-    margin: 0px 0px 0px -19px;
-    transition: all 0.5;
-    margin-bottom: -8px;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-}
-.navbar-nav .nav-link .icon:hover {
-    border: none;
-    color: #fff;
-    background-color: #67C56E;
-    width: 30px;
-    height: 30px;
-    padding: 6px;
-    border-radius: 4px;
-    margin: 0px 0px 0px -19px;
-    margin-bottom: -8px;
-}
-.white-nav-top.navbar-light ul.navbar-nav.icon-change li a.nav-link {
-    color: #0a0a0a;
-    border: 1px solid #13e028;
-    width: 32px;
-    height: 32px;
-    padding: 0px 0px 0px 19px;
-    line-height: 0;
-    border-radius: 6px;
-}
+    .social-icon {
+        position: fixed;
+        top: 70px;
+        z-index: 1;
+    }
+    .social-icon .navbar-nav .icon {
+        margin: -8px 0px 0px 0px;
+        color: #fff;
+        background: #04bb3c;
+        width: 50px;
+        height: 40px;
+        padding: 10px 0px 7px 0px;
+        border-bottom: 1px solid #328e27;
+        transition: all .5s;
+    }
+    .social-icon .navbar-nav .icon:hover {
+        margin: -8px 0px 0px 0px;
+        color: #fff;
+        background: #04bb3c;
+        width: 55px;
+        height: 40px;
+        padding: 10px 0px 7px 0px;
+        border-bottom: 1px solid #328e27;
+    }
+    .social-icon .navbar-nav.navbar-nav-change.mt-2, .my-2 {
+        margin-top: 12.5rem!important;
+    }
+    .social-icon.social-icon-change .navbar-nav .icon {
+        margin: -8px 0px 0px 0px;
+        float: right;
+        color: #fff;
+        background: red;
+        width: 50px;
+        height: 40px;
+        padding: 10px 0px 7px 0px;
+        border-bottom: 1px solid #328e27;
+        transition: all .5s;
+    }
 /* =========================================
                 content box
 ============================================ */
@@ -813,6 +820,12 @@ section#portfolio-wrapper {
 .form-changes .change-textarea{
         height: 170px;
 }
+.contact-detail a {
+    color: #000;
+}
+.contact-detail a:hover {
+    color: #04BB3C;
+}
 .contact-2 {
     margin: -46px 0px 63px 0px;
 }
@@ -851,8 +864,8 @@ footer.footer.footer-bar.bg-dark {
     border-top: 1px solid #4e4e4e;
 }
 img.footer-img {
-    height: 168px;
-    margin-bottom: -67px;
+    height: 126px;
+    margin-bottom: -60px;
 }
 .navbar.navbar-expand-lg.navbar-light.navbar-chaange {
     border-bottom: 0;
